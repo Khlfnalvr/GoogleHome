@@ -19,17 +19,19 @@ Google only lets an app use your Google Home if it has its own OAuth client, so 
 
 ## Use it
 
-1. Run `GoogleHomeWidget.exe`.
+1. Run `GoogleHomeWidget-Setup.exe` (or the portable `GoogleHomeWidget.exe`), see **Get it** below.
 2. Click **Sign in with Google**. The first time, pick the JSON file from step 4. Your browser opens for Google login.
    If Google says *"Google hasn't verified this app"*, click **Advanced → Go to …**. It's your own app.
 3. Click **⚙** and type your lamp and AC names **exactly as they appear in the Google Home app**. Turn on **Start with Windows** if you like.
 
 To keep the icon visible on the taskbar (not hidden under **^**): **Settings → Personalization → Taskbar → Other system tray icons** → turn on **GoogleHomeWidget**.
 
-## Get the .exe
+## Get it
 
-- **Download:** GitHub → **Actions** → latest **Build Windows app** run → **Artifacts → GoogleHomeWidget**.
-- **Or build it:** install Python 3.11+, then run `build.bat`. The exe is in `dist\`.
+- **Download:** GitHub → **Actions** → latest **Build Windows app** run → **Artifacts**:
+  - **GoogleHomeWidget-Setup**: installer (Start Menu shortcut, optional *Start with Windows*, uninstall from Windows Settings → Apps). No admin rights needed.
+  - **GoogleHomeWidget-portable**: just the exe, no install.
+- **Or build it:** install Python 3.11+ (and [Inno Setup 6](https://jrsoftware.org/isdl.php) for the installer), then run `build.bat`. Output is in `dist\`.
   If you put `client_secret.json` next to `build.bat`, it gets bundled into the exe, so you (or family) only need to click **Sign in with Google**.
 
 ## Troubleshooting
