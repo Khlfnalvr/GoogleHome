@@ -1,0 +1,5 @@
+customtkinter>=5.2,<7
+pystray>=0.19
+pillow>=10
+google-auth-oauthlib>=1.2
+gassist-text>=0.1.0
