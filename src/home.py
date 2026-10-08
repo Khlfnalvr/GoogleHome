@@ -20,7 +20,17 @@ CONFIG_FILE = APP_DIR / "config.json"
 CLIENT_SECRET = "client_secret.json"
 
 # "lamp" and "ac" must match the device names shown in the Google Home app.
-DEFAULT_CONFIG = {"lamp": "lamp", "ac": "AC", "ac_temp": 24, "language": "en-US"}
+DEFAULT_CONFIG = {
+    "lamp": "lamp",
+    "ac": "AC",
+    "language": "en-US",
+    # Last values sent from the widget (Google Assistant can't report device state).
+    "lamp_on": False,
+    "lamp_brightness": 100,
+    "ac_on": False,
+    "ac_temp": 24,
+    "ac_fan": "auto",
+}
 
 
 class SignInRequired(Exception):

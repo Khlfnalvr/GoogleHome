@@ -2,7 +2,7 @@
 
 Control your Google Home **lamp** and **AC** from the Windows 11 taskbar.
 
-- Click the house icon in the taskbar tray (next to the clock): a flyout opens with **Lamp On/Off**, **AC On/Off** and **AC temperature − / +**.
+- Click the house icon in the taskbar tray (next to the clock): a flyout opens with **Lamp on/off + brightness**, **AC on/off**, **AC temperature − / +** and **AC fan speed** (Auto / Low / Medium / High).
 - Sign in with your Google account. Commands go through Google Assistant, so any device in your Google Home app works.
 
 ## One-time Google setup (about 5 minutes)
